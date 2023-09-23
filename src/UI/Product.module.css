@@ -1,0 +1,133 @@
+
+
+.productPage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productContainer{
+
+  height: 15rem;
+  background-color: rgba(136, 141, 141, 0.699);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+   margin-top: 1rem;
+  
+}
+.activeFilter{
+width: 15px;
+height: 15px;
+margin-right: 1rem;
+}
+.productServer{
+  margin-top: 2rem;
+  width: 74%;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+ flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: auto;
+
+  margin-right: 2%;
+
+}
+.intro{
+
+  width: 100%;
+  position: absolute;
+  height: 2.7rem;
+  font-size: .89em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+.filterTag{
+  margin-left: 1rem;
+ margin-top: .3rem;
+}
+.productServerOnly{
+  margin-top: 2.5rem;
+  width: 94%;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+ flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: auto;
+margin-left: 3%;
+  margin-right: 2.5%;
+
+}
+.productFilters{
+width: 20%;
+padding-top: 1rem;
+border-right: .1rem solid  rgb(201, 199, 199);
+position: sticky;
+z-index: 4;
+
+}
+
+.productName{
+  font-size: .89em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.filterHeading{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.close{
+  margin-right: .6rem;
+  padding-right: .4rem;
+}
+.heading{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif
+}
+
+.filterName{
+  font-size: .89em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.image{
+  margin-bottom: 1rem;
+}
+
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: .1rem solid rgb(201, 199, 199);
+}
+
+
+
+
+
+@media (max-width:1200px) {
+  .productServer{
+    
+    width: 75%;
+  }
+}

@@ -1,0 +1,136 @@
+
+.user{
+  width: 100%;
+  display: flex;
+  
+
+}
+.part1{
+width: 20%;
+
+height: 100vh;
+padding-top: 1rem;
+border-right: .1rem solid  rgb(201, 199, 199);
+}
+.logo{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.filterHeading{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.close{
+  margin-right: .6rem;
+}
+.options{
+  font-size: .89em;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+  width: 100%;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: .1rem solid rgb(201, 199, 199);
+ transition: .3s;
+}
+.options:hover{
+  color: black;
+  letter-spacing: 1.5px;
+  border-bottom: .1rem solid rgb(0, 0, 0);
+}
+.part{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+
+  padding-top: 1rem;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+.dataContainer{
+  width: 50%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+ 
+}
+.info{
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Chakra Petch', sans-serif;
+  border: .1rem solid  rgb(201, 199, 199);
+  padding: .5rem ;
+  margin-top: 1rem;
+
+}
+.info:hover{
+  animation: hover;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+
+}
+.part2{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ margin-top: 4rem;
+  height: 16rem;
+}
+.heading{
+text-align:left;
+padding-left: 1rem;  
+font-weight: 200;
+font-family: 'Chakra Petch', sans-serif;
+}
+.image{
+  border-radius: 10rem;
+}
+
+@keyframes hover {
+  
+  0%{
+    border-bottom: .1rem solid  rgb(3, 3, 3);
+  }
+  20%{
+    /* border-bottom: .1rem solid  rgb(3, 3, 3); */
+    border-right: .1rem solid  rgb(3, 3, 3);
+  }
+  40%{
+
+    /* border-bottom: .1rem solid  rgb(3, 3, 3);
+    border-right: .1rem solid  rgb(3, 3, 3); */
+    border-top: .1rem solid  rgb(3, 3, 3);
+  }
+  60%{
+   
+    /* border-bottom: .1rem solid  rgb(3, 3, 3);
+    border-right: .1rem solid  rgb(3, 3, 3); */
+    border-top: .1rem solid  rgb(3, 3, 3);
+  }
+  80%{
+    border-left:  .1rem solid  rgb(3, 3, 3);
+    /* border-bottom: .1rem solid  rgb(3, 3, 3);
+    border-right: .1rem solid  rgb(3, 3, 3);
+    border-top: .1rem solid  rgb(3, 3, 3); */
+    
+  }
+  100%{
+    /* background-color: black; */
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(7, 7, 7);
+  }
+}

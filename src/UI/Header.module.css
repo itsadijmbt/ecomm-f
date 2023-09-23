@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+.headerContainer{
+  width: 100%;
+
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   padding-top: 3rem;
+   font-family: 'Chakra Petch', sans-serif;
+   align-items: center;
+   padding-bottom: 2rem;
+   border-bottom: .1rem solid rgb(201, 199, 199);
+}
+.part1,.part3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10rem;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+  align-items: center;
+}
+.part1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 16rem;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+.login, .canvasArt,.bestSeller{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  transition: all .1s;
+ text-decoration: none;
+  height: 1.2rem;
+  position: relative;
+  color: black;
+}
+.login{
+padding-bottom: 1.5rem;
+}
+/* , .canvasArt::after , {
+ content: "";
+  top: 90%;
+  background-color: aqua;
+  width: 100%;
+  z-index: 5;
+  color:black;
+ height: 2rem;
+} */
+.canvasArt::after,.login::after, .bestSeller::after{
+  position: absolute;
+  content: ' ';
+  background-color: rgb(0, 0, 0);
+  width: 0%;
+  top: 105%;
+  left: 0%;
+  height: .1rem;
+  transition: .3s;
+}
+.canvasArt:hover::after,.login:hover::after, .bestSeller:hover::after{
+  position: absolute;
+  content: ' ';
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  top: 105%;
+  left: 0%;
+  height: .1rem;
+}
+
+/* .login:hover,.canvasArt:hover, .bestSeller:hover{
+  border-bottom: .1rem solid black;
+} */
+.logo{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.width{
+  width: 100%;
+  height: 100vh;
+ position: fixed;
+ top: 0%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+
+}
+.backdrop{
+  height: 100vh;
+  width: 69%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(12, 12, 12, 0.158);
+  filter: blur(10px);
+}
+.searchMenu{
+ width:31%;
+background-color:rgb(255, 255, 255);
+height: 100vh;
+z-index: 9;
+
+
+}
+.inputFeild{
+
+ width: 100%;
+ height: 3rem;
+ z-index: 6;
+display: flex;
+height: 5rem;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+ border-bottom: .1rem solid rgb(201, 199, 199);
+}
+.input{
+background-color: transparent;
+border: none;
+height: 4rem;
+width: 100%;
+font-family: 'Chakra Petch', sans-serif;
+font-weight: 300;
+font-size: 1.1rem;
+letter-spacing: .2rem;
+padding-left: 1rem;
+
+}
+.close{
+  padding-right: .5rem;
+}
+input::after{
+  border: none;
+}
+input:focus, textarea:focus {
+  outline: none; /* Remove the default focus outline */
+  border: none;  /* Remove the border */
+}

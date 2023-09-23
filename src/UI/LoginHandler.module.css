@@ -1,0 +1,70 @@
+ 
+
+ .loginPage{
+width: 100%;
+position: fixed;
+top: 0%;
+height: 110vh;
+backdrop-filter: blur(10px);
+
+ }
+
+ .welcomeTxt{
+  font-family: 'Chakra Petch', sans-serif;
+font-weight: 300;
+font-size: 2.3rem;
+letter-spacing: .2rem;
+ }
+ .heading2{
+  font-family: 'Chakra Petch', sans-serif;
+font-weight: 300;
+font-size: 1.4rem;
+letter-spacing: .2rem;
+ }
+ .inputHandler{
+  width: 60%;
+  height: 2rem;
+  border-radius: .5rem;
+  border: .1rem solid;
+  padding-left: 1rem;
+  font-family: 'Chakra Petch', sans-serif;
+ }
+
+ .buttonHandler{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  
+ }
+
+.loginHandler{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-around;
+  height: 18rem;
+  align-items: center;
+  margin-left: 20%; 
+  border: .1rem solid ;
+  margin-top: 5rem;
+  border-radius: 2rem;
+
+}
+.login,.signUp{
+  padding: .6rem 1rem;
+  border-radius: .7rem;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+@media (max-width:700px) {
+ 
+  .loginHandler{
+    width:80% ;
+    margin-left: 10%;
+  }
+  .buttonHandler
+  {
+    width: 45%;
+  }
+
+}
